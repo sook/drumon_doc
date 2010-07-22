@@ -1,20 +1,16 @@
 {include file="header.tpl" eltype="Procedural file" class_name=$name hasel=true contents=$pagecontents}
-
-<br>
-<br>
-
 {if $classes}
 <div class="contents">
-{if $tutorial}
-<span class="maintutorial">Main Tutorial: {$tutorial}</span>
-{/if}
-<h2>Classes:</h2>
-{section name=classes loop=$classes}
-<dt>{$classes[classes].link}</dt>
-	<dd>{$classes[classes].sdesc}</dd>
-{/section}
-</div><br /><br />
-{/if}
+	{if $tutorial}
+		<span class="maintutorial">Main Tutorial: {$tutorial}</span>
+	{/if}
+	<h2>Classes:</h2>
+		{section name=classes loop=$classes}
+		<dt>{$classes[classes].link}</dt>
+			<dd>{$classes[classes].sdesc}</dd>
+		{/section}
+</div><br />
+	{/if}
 
 <h2>Page Details:</h2>
 {include file="docblock.tpl" type="page"}

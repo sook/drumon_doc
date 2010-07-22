@@ -1,3 +1,27 @@
+*, html, body, div, dl, dt, dd, ul, ol, li, ul li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img, iframe { border:0 }
+ol, ul, ul li {list-style: none; list-style-type: none;}
+ol li{list-style:decimal; margin-left: 1.8em;}
+ul li{list-style:disc; margin-left: 1.5em;}
+hr {margin: 0;padding: 0;border: 0;color: #000;background-color: #000;height: 1px}
+caption, th { text-align:left }
+h1, h3, h4, h5, h6 { font-size:100%}
+blockquote:before, blockquote:after, q:before, q:after { content:''}
+a {
+	text-decoration:underline; 
+	color:#1B6EC3;  
+}   
+a:visited {
+	color:#1B6EC3;
+}
+strong { font-weight: bold }
+cite, em, dfn { font-style: italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+.clear{clear:both; display: block; height: 0px; overflow:hidden;}
+.float-left{ float: left;}
+.float-right{ float: right;}
+/*
 .php {
 	padding: 1em;
 }
@@ -142,7 +166,7 @@ ul {
 	margin-left:		0px;
 	padding-left:		8px;
 }
-/* Syntax highlighting */
+
 
 .src-code { background-color: #f5f5f5; border: 1px solid #ccc9a4; padding: 0 0 0 1em; margin : 0px;
             font-family: 'Courier New', Courier, monospace; font-weight: normal; }
@@ -176,7 +200,7 @@ ul {
 .tute-comment { font-style: italic }
 .tute-inline-tag { color: #636311; font-weight: bold }
 
-/* tutorial */
+
 
 .authors {  }
 .author { font-style: italic; font-weight: bold }
@@ -192,4 +216,128 @@ ul {
 .cmd-synopsis { margin: 1em 0em }
 .cmd-title { font-weight: bold }
 .toc { margin-left: 2em; padding-left: 0em }
+ */   
 
+
+ /* Refatoração */   
+body
+{  
+  color: #5C5C5C;
+  background-color:   #ffffff;
+  font-family:        helvetica,arial,verdana;
+  font-size: 14px;
+  margin:             0;
+  padding:            0;
+} 
+h1 {
+	color: #8F5757;
+	font-size: 28px;
+}  
+h3 {
+	color: #353535;
+	font-size: 16px;
+	font-weight: bold;
+}
+div#conteiner {
+	width:auto;
+}
+	div#topo {
+		height:36px;
+		background-color:#f3f3f3;
+		border-bottom:#e4e4e4 2px solid;
+		padding-top:10px;
+		padding-left:10px;
+	}   
+		div#toptopo {
+			height:20px;
+		}
+			span.topostyle {
+				font-size:18px;
+				font-weight:bold;
+				color:#323232;
+			}
+		div#subtopo {
+			height:16px; 
+			color:#000000; 
+			text-align:right;
+			
+		} 
+		div#subtopo a {
+			color:#000000;  
+			text-decoration:none;    
+			
+		}   
+	div#spacetop {
+		height:10px;
+	} 
+	div#centro {
+		clear:both;
+	}
+	
+		div#left {
+			width:218px;
+			border-right:#e4e4e4 2px solid;
+			float:left;
+		}
+			div.content_pacotes_top {
+				width:164px;
+				height:28px;
+				margin:0 auto;
+				border-bottom:#e4e4e4 1px solid;
+			}
+			div.content_pacotes {
+				width:164px;
+				margin:0 auto;
+				margin-bottom: 20px;
+			}   
+			div.content_pacotes ul li {
+				list-style:none;
+			}
+				div.content_pacotes ul li a {
+
+				}
+		div#right {
+			width:218px;
+			border-left:#e4e4e4 2px solid;		
+			float:right;	
+		}
+		div#center {
+			margin:0 230px; 
+		}
+        	.src-code { background-color: #f5f5f5; border: 1px solid #ccc9a4; padding: 5 5 5 1em; margin : 30px;
+			            font-family: 'Courier New', Courier, monospace; font-weight: normal; }
+			.src-line {  font-family: 'Courier New', Courier, monospace; font-weight: normal; }
+
+			.src-comm { color: green; }
+			.src-id {  }
+			.src-inc { color: #0000FF; }
+			.src-key { color: #0000FF; }
+			.src-num { color: #CC0000; }
+			.src-str { color: #66cccc; }
+			.src-sym { font-weight: bold; }
+			.src-var { }
+
+			.src-php { font-weight: bold; }
+
+			.src-doc { color: #009999 }
+			.src-doc-close-template { color: #0000FF }
+			.src-doc-coretag { color: #0099FF; font-weight: bold }
+			.src-doc-inlinetag { color: #0099FF }
+			.src-doc-internal { color: #6699cc }
+			.src-doc-tag { color: #0080CC }
+			.src-doc-template { color: #0000FF }
+			.src-doc-type { font-style: italic }
+			.src-doc-var { font-style: italic }
+
+			.tute-tag { color: #009999 }
+			.tute-attribute-name { color: #0000FF }
+			.tute-attribute-value { color: #0099FF }
+			.tute-entity { font-weight: bold; }
+			.tute-comment { font-style: italic }
+			.tute-inline-tag { color: #636311; font-weight: bold }    
+		   
+		span.title_pacote {
+			font-size:14px;
+			font-weight:bold;
+			color:#656565;
+		}
