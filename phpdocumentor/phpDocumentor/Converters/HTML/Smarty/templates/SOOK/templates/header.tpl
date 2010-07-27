@@ -9,7 +9,8 @@
 	<div id="topo">
 		<div id="toptopo">
 		   <span class="topostyle"> {$package} </span>
-		</div>          
+		</div> 
+		         
 		<div id="subtopo">
 		   	{assign var="packagehaselements" value=false}
 	        {foreach from=$packageindex item=thispackage}
@@ -23,7 +24,7 @@
 			{/if}
 	  	    [ <a href="{$subdir}elementindex.html" class="menu">all elements</a> ]&nbsp; 
 		</div> 
-	</div>
+	</div>  
 	<div id="centro">
 		<div id="left">
 

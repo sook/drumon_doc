@@ -13,7 +13,6 @@
 <table width="100%" border="0">
 	<tr>
 		<td valign="top">
-		
 		<h3><a href="#class_details">{if $is_interface}Interface{else}Class{/if} Overview</a></h3>
 		<pre>{section name=tree loop=$class_tree.classes}{$class_tree.classes[tree]}{$class_tree.distance[tree]}{/section}</pre><br />
 		<div class="description">{$sdesc|default:''}</div><br /><br />
@@ -69,42 +68,53 @@
 		        {/if}
 		
 		</td>
-		
-		{if count($contents.var) > 0}
-		<td valign="top">
-		<h3><a href="#class_vars">Variables</a></h3>
-		<ul>
-		  {section name=contents loop=$contents.var}
-		  <li>{$contents.var[contents]}</li>
-		  {/section}
-		</ul>
-		</td>
+		<div class="content_right_method">
+
+		{if count($contents.var) > 0} 
+		<div class="content_pacotes_top"> 
+			<a href="#class_vars"><span class="title_pacote">Variables</span></a>
+		</div>
+		<div class="content_pacotes">  
+			<ul>
+			  {section name=contents loop=$contents.var}
+			  <li>{$contents.var[contents]}</li>
+			  {/section}
+			</ul>
+		</div>
 		{/if}
 		
-		{if count($contents.const) > 0}
-		<td valign="top">
-		<h3><a href="#class_consts">Constants</a></h3>
-		<ul>
-		  {section name=contents loop=$contents.const}
-		  <li>{$contents.const[contents]}</li>
-		  {/section}
-		</ul>
-		</td>
+		{if count($contents.const) > 0} 
+		<div class="content_pacotes_top">
+			<a href="#class_consts"><span class="title_pacote">Constants</span></a>
+		</div>
+		<div class="content_pacotes">  
+			<ul>
+			  {section name=contents loop=$contents.const}
+			  <li>{$contents.const[contents]}</li>
+			  {/section}
+			</ul>
+		</div>
+		{/if} 
+		
+		{if count($contents.method) > 0}  
+		<div class="content_pacotes_top"> 
+		<a href="#class_methods"><span class="title_pacote">Methods</span></a>  
+		</div>
+		<div class="content_pacotes">  
+			
+				
+				<ul>
+				  {section name=contents loop=$contents.method}
+				  <li>{$contents.method[contents]}</li>
+				  {/section}
+				</ul>
+		</div>
 		{/if}
-		{if count($contents.method) > 0}
-		<td valign="top">
-		<h3><a href="#class_methods">Methods</a></h3>
-		<ul>
-		  {section name=contents loop=$contents.method}
-		  <li>{$contents.method[contents]}</li>
-		  {/section}
-		</ul>
-		</td>
-		{/if}
-	
+
+			</div>	
 	</tr>
 </table>
-<hr />
+
 
 <table width="100%" border="0"><tr>
 
