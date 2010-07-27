@@ -8,7 +8,7 @@
 <div id="conteiners">    
 	<div id="topo">
 		<div id="toptopo">
-		   <span class="topostyle"> {$package} </span>
+		   <a href="/temple" class="topostyle">Drumon: Documentação Framework</a>
 		</div> 
 		         
 		<div id="subtopo">
@@ -19,7 +19,7 @@
 	            {/if}
 	        {/foreach}
 	        {if $packagehaselements}
-	  		  [ <a href="{$subdir}classtrees_{$package}.html" class="menu">class tree: {$package}</a> ]
+	  		  <!-- [ <a href="{$subdir}classtrees_{$package}.html" class="menu">class tree: {$package}</a> ] -->
 			  [ <a href="{$subdir}elementindex_{$package}.html" class="menu">index: {$package}</a> ]
 			{/if}
 	  	    [ <a href="{$subdir}elementindex.html" class="menu">all elements</a> ]&nbsp; 
@@ -88,23 +88,7 @@
 			{/if} 
 			{if !$noleftindex}{assign var="noleftindex" value=false}{/if}
 			{if !$noleftindex}
-				{if $compiledfileindex}
-					<div class="content_pacotes_top">      
-						<span class="title_pacote">Files:</span>
-					</div> 
-					<div class="content_pacotes">
-						{eval var=$compiledfileindex}
-					</div>
-		    	{/if}
-
-				{if $compiledinterfaceindex}
-					<div class="content_pacotes_top">       
-						<span class="title_pacote">Interfaces:</span>   
-					</div> 
-					<div class="content_pacotes">
-						{eval var=$compiledinterfaceindex} 
-					</div>
-				{/if}
+				
 
 				{if $compiledclassindex}   
 					<div class="content_pacotes_top"> 
@@ -113,7 +97,24 @@
 					<div class="content_pacotes">
 					      {eval var=$compiledclassindex}
 					</div>
-				{/if}
+				{/if} 
+				<!-- {if $compiledfileindex}
+								   	<div class="content_pacotes_top">      
+								   		<span class="title_pacote">Files:</span>
+								   	</div> 
+								   	<div class="content_pacotes">
+								   		{eval var=$compiledfileindex}
+								   	</div>
+								{/if}  -->
+                
+				<!-- {if $compiledinterfaceindex}
+								   	<div class="content_pacotes_top">       
+								   		<span class="title_pacote">Interfaces:</span>   
+								   	</div> 
+								   	<div class="content_pacotes">
+								   		{eval var=$compiledinterfaceindex} 
+								   	</div>
+								{/if} -->   
 			{/if}  
 		</div>
 		<div id="right"> 
@@ -121,14 +122,7 @@
 		</div>         
 		<div id="center">
   			{if $hasel}
-			<h1>{$eltype|capitalize}: {$class_name}</h1>
-			Source Location: {$source_location}<br /><br />
+			<h1>{$eltype|capitalize}: {$class_name}</h1> 
+			<hr>
 			{/if}
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr valign="top">
-    
-  <td>
-      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
-			{if !$hasel}{assign var="hasel" value=false}{/if}
-			

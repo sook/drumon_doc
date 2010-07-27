@@ -1,7 +1,6 @@
         <div class="credit">
-		    <hr />
 		    
-	      </div>
+	    </div>
       </td></tr></table>
     </td>
   </tr>
