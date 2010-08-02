@@ -1,6 +1,5 @@
 {include file="header.tpl" eltype="class" hasel=true contents=$classcontents}
 
-
 <!-- CONFLITOS -->
 {if $conflicts.conflict_type}
 	<div class="warning">Conflicts with classes:<br />
@@ -9,10 +8,8 @@
 		{/section}
 	</div>
 {/if} 
-	
 {* original <div class="warning">{$conflicts</div> *}
 <!-- FIM CONFLITOS -->      
-                  
 
 <!-- DESCRICAO -->
    <div class="description">{$sdesc|default:''}</div>
@@ -33,9 +30,7 @@
 </div>
 <!-- FIMFILENAME -->
 	  
-	
-	
-	
+  
 <div class="content_class">
 	{if $tutorial}
 	  	<h4 class="classtutorial">
@@ -133,20 +128,20 @@
 
 	{* original {if $children != ""
 	<valign="top">
-	<h3>Child classes:</h3>
+		<h3>Child classes:</h3>
 	<div class="tags">
-	{$children *}
-
-	{if $children}
-
-	<h3>Child classes:</h3>
-	<div class="tags">
-	{section name=kids loop=$children}
-	<dl>
-	<dt>{$children[kids].link}</dt>
-		<dd>{$children[kids].sdesc}</dd>
-	</dl>
-	{/section}
+		{$children *}
+    	
+		{if $children}
+    	
+		<h3>Child classes:</h3>
+		<div class="tags">
+		{section name=kids loop=$children}
+		<dl>
+		<dt>{$children[kids].link}</dt>
+			<dd>{$children[kids].sdesc}</dd>
+		</dl>
+		{/section}
 	</div>
 
 	{/if}
@@ -250,5 +245,4 @@
 	</div>
 	{/if}
 </div>
-
 {include file="footer.tpl"}
