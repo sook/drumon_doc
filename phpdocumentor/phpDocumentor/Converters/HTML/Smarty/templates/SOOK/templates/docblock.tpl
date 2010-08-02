@@ -7,7 +7,7 @@
 <table border="0" cellspacing="0" cellpadding="0">
 {section name=tag loop=$tags}
   <tr>
-    <td><b>{$tags[tag].keyword}:</b>&nbsp;&nbsp;</td><td>{$tags[tag].data}</td>
+    <td><b>{$tags[tag].keyword}:</b>{$tags[tag].data}</td>
   </tr>
 {/section}
 </table>

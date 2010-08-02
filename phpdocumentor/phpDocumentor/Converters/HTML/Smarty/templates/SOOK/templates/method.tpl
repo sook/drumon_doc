@@ -1,12 +1,12 @@
 {section name=methods loop=$methods}
 {if $methods[methods].static}
+	<div class="cont_method_static">
+
 {if $show == 'summary'} 
 static method {$methods[methods].function_call}, {$methods[methods].sdesc}
 {else}
-  
-
 	<a name="{$methods[methods].method_dest}"></a>
-	<h3>Static Method: {$methods[methods].function_name} 
+	<h3><span class="title_method">Static Method: {$methods[methods].function_name} </span>
 	<span class="smalllinenumber">[line {if $methods[methods].slink}{$methods[methods].slink}{else}{$methods[methods].line_number}{/if}]</span>
 	</h3>
 	<div class="function">
@@ -71,6 +71,8 @@ static method {$methods[methods].function_call}, {$methods[methods].sdesc}
     <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
 {/if}
+
+		</div>
 {/if}
 {/section}
 

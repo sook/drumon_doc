@@ -211,17 +211,17 @@
 
 	{if $vars && count($vars) > 0}
 	<a name="class_vars"></a>
-	<h3>Class Variables</h3> 
+	<h3>Properties:</h3> 
 	<hr /> 
-	<div class="tags">
+	<div class="ctt_var">
 	{include file="var.tpl"}
 	</div>
 	{/if}
 
 	{if $methods & count($methods) > 0}
 	<a name="class_methods"></a>
-	<h3>Methods</h3> 
-	<hr />
+	<h3 class="title_method_class">Methods</h3> 
+	<hr /> 
 	<div class="tags">
 	{include file="method.tpl"}
 	</div>
