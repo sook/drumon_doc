@@ -148,8 +148,9 @@
 
 	{if $iconsts && count($iconsts) > 0}
 
-	<h3>Inherited Constants h3>
+	<h3>Inherited Constants </h3>
 	{section name=iconsts loop=$iconsts}
+	
 	<div class="tags">
 	<h4>Class: {$iconsts[iconsts].parent_class}</h4>
 	<dl>
@@ -168,7 +169,9 @@
 	{/if}
 
 	{if $ivars && count($ivars) > 0}
-
+    <div class="inheritd">
+    	
+    
 	<h3>Inherited Variables</h3>
 	{section name=ivars loop=$ivars}
 	<div class="tags">
@@ -185,10 +188,13 @@
 	{/section}
 	</dl>
 	</div>
-	{/section}
+	{/section} 
+	</div>
 	{/if}
 
-	{if $imethods && count($imethods) > 0}
+	{if $imethods && count($imethods) > 0}  
+	<div class="inheritd">
+	
 	<h3>Inherited Methods</h3>
 	<div class="tags">
 	{section name=imethods loop=$imethods}
@@ -205,6 +211,8 @@
 	  {/section}
 	</dl>
 	{/section}
+	</div>
+		
 	</div>
 	{/if}
 
