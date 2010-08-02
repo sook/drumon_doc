@@ -54,21 +54,21 @@
 {/section}  -->
   <!-- {include file="docblock.tpl" sdesc=$vars[vars].sdesc desc=$vars[vars].desc tags=$vars[vars].tags} -->
 
-  <br />
-	<div class="tags">
-  <!-- <table border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td><b>Type:</b>&nbsp;&nbsp;</td>
-        <td>{$vars[vars].var_type}</td>
-      </tr>
-      {if $vars[vars].var_overrides != ""}
-      <tr>
-        <td><b>Overrides:</b>&nbsp;&nbsp;</td>
-        <td>{$vars[vars].var_overrides}</td>
-      </tr>
-      {/if}
-    </table>        -->
-	</div>
+
+	<!-- <div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><b>Type:</b>&nbsp;&nbsp;</td>
+          <td>{$vars[vars].var_type}</td>
+        </tr>
+        {if $vars[vars].var_overrides != ""}
+        <tr>
+          <td><b>Overrides:</b>&nbsp;&nbsp;</td>
+          <td>{$vars[vars].var_overrides}</td>
+        </tr>
+        {/if}
+      </table>        
+	</div> -->
 {/if}
 {/if}
 {/section}
