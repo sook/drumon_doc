@@ -57,7 +57,7 @@
 	({$vars[vars].var_type}) - {$vars[vars].desc}  {$vars[vars].sdesc}
 	
 <!-- {section name=tag loop=$vars[vars].tags}
-	{if ( $vars[vars].tags[tag].keyword == 'access')}
+	{if ( $vars[vars].tags[tag].keyword == 'return')}
 		 {$vars[vars].tags[tag].keyword}:{$vars[vars].tags[tag].data}
 	{/if}               
 {/section}  -->

@@ -186,7 +186,8 @@ div.function
 div.top
 {
   font-size:          8pt;  
-  margin-bottom:6px;
+  margin-bottom:6px;  
+text-align:right;
 }
 
 div.warning
@@ -286,7 +287,7 @@ div#conteiner {
 		}
         .content_class {
         	margin-top:2px;
-			padding-top:10px;
+			padding-top:2px;
 		}	
 		.tags {
 			
@@ -295,12 +296,11 @@ div#conteiner {
  
 		}
 		.description {
-			margin-top:6px; 
-			margin-bottom:10px; 
+			margin-top:12px;  
 			font-size:14px;
 		}  
 		.class_tree {
-			margin-bottom:20px;
+			margin-bottom:10px;
 		} 
 		.filename_class {
 			margin-bottom:20px;
@@ -311,7 +311,7 @@ div#conteiner {
 			color:#8f5757;
 		} 
 		.ctt_var {
-			padding-bottom:20px;
+			padding-bottom:30px;
 		}     
 		.title_method {
 			font-size:22px;
@@ -327,7 +327,27 @@ div#conteiner {
 		} 
 		.inheritd {
 			margin-bottom:20px;
+		} 
+		.param_content {
+			margin-top:20px;
+			margin-bottom:20px;
+		}  
+		.titl_ct {
+			margin-top:20px;
+			margin-bottom:10px;
+		} 
+		.content_tags {
+			margin-top:20px;
+			margin-bottom:10px;
+		}   
+		.data_tg {
+			margin-top:5px;
+			margin-bottom:5px;
+		}  
+		.content_tags_sep {
+			margin-bottom:8px;
 		}
+
 		
 		
 		

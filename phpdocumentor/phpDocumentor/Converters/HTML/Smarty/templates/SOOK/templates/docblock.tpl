@@ -1,8 +1,7 @@
-{if $sdesc != ''}{$sdesc|default:''}<br />{/if}
-{if $desc != ''}{$desc|default:''}<br />{/if}
+
 {if count($tags) > 0}
 <br />
-<h4>Tags:</h4>
+<h3>Tags:</h3>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
 {section name=tag loop=$tags}
