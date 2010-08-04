@@ -58,9 +58,9 @@
     						{$methods[methods].method_overrides
     						{/if *}
 							{if count($methods[methods].params) > 0}
-							<div class="param_content">
+							<div class="content_tags_sep">
 							<h3>Parameters:</h3>
-							<br/>
+							<div class="data_tg"> 
 							<table border="0" cellspacing="0" cellpadding="0">
 							{section name=params loop=$methods[methods].params}
 							  <tr>
@@ -69,11 +69,12 @@
 							    <td>- &nbsp;{$methods[methods].params[params].data}</td>
 							  </tr>
 							{/section}
-							</table>
+							</table>      
+							</div>
     						</div>
     					    {/if}
 							
-							<div class="content_tags">
+							<div class="content_tags_sep">
 								{section name=tag loop=$methods[methods].tags}     
 									{if ( $methods[methods].tags[tag].keyword == 'return')}
 										{$methods[methods].function_return}          
@@ -84,7 +85,7 @@
 									{/if}               
 								{/section}
 							</div>
-							<div class="content_tags">
+							<div class="content_tags_sep">
 								<h3>Return:</h3> 
 								<div class="data_tg">{$methods[methods].function_return}</div>
 							</div>
@@ -165,7 +166,7 @@
 				{if count($methods[methods].params) > 0}
 				<div class="param_content">
 				<h3>Parameters:</h3>
-				<br/>
+				<div class="data_tg">
 					<table border="0" cellspacing="0" cellpadding="0">
 						{section name=params loop=$methods[methods].params}
 						<tr> 
@@ -176,9 +177,10 @@
       					</tr>
     					{/section}
     				</table>
-    			</div>
+				</div>
+				</div>
     			{/if} 
-				<div class="content_tags">
+				<div class="content_tags_sep">
 					{section name=tag loop=$methods[methods].tags}     
 						{if ( $methods[methods].tags[tag].keyword == 'return')}
 						    <div class="content_tags_sep">

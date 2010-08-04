@@ -26,7 +26,10 @@
 <!-- FILENAME--> 
 <div class="filename_class">
 	<h3>File Name:</h3>
-	{$source_location} [line {if $class_slink}{$class_slink}{else}{$line_number}{/if}]
+	<div class="cont_filename">
+	{$source_location} [line {if $class_slink}{$class_slink}{else}{$line_number}{/if}] 
+		
+	</div>
 </div>
 <!-- FIMFILENAME -->
 	  
