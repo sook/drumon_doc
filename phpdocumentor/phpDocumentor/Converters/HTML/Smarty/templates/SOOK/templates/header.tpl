@@ -8,11 +8,11 @@
 <div id="conteiners">    
 	<div id="topo">
 		<div id="toptopo">
-		   <a href="/temple" class="topostyle">Drumon: Documentação Framework</a>
+		   <a class="topostyle">Drumon: Documentação Framework</a>
 		</div> 
 		         
 		<div id="subtopo">
-		   	{assign var="packagehaselements" value=false}
+		   	{assign var=packagehaselements" value=false}
 	        {foreach from=$packageindex item=thispackage}
 	            {if in_array($package, $thispackage)}
 	                {assign var="packagehaselements" value=true}

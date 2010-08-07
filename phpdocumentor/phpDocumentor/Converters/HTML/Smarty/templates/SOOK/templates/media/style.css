@@ -266,7 +266,7 @@ div#conteiner {
 			}
 			div.content_pacotes {
 				width:164px;
-				margin:0 auto;
+				
 				margin-bottom: 20px;
 				margin-top:10px;
 			}   
@@ -349,6 +349,10 @@ div#conteiner {
 		} 
 		.cont_filename {
 			margin-top:6px;
+		}   
+		.subpq_class_left {
+			margin-left:30px;
+			font-weight:bold;
 		}
 
 		

@@ -10,18 +10,16 @@
 					<span class="smalllinenumber">[line {if $methods[methods].slink}{$methods[methods].slink}{else}{$methods[methods].line_number}{/if}]</span>
 				</h3>
 				<div class="function">
-					<!-- {include file="docblock.tpl" sdesc=$methods[methods].sdesc desc=$methods[methods].desc tags=$methods[methods].tags} -->
-					{if $sdesc != ''}{$sdesc|default:''}<br />{/if}
-					{if $desc != ''}{$desc|default:''}<br />{/if}
-					{if $methods[methods].descmethod}
-					<p>Overridden in child classes as:<br />
-						{section name=dm loop=$methods[methods].descmethod}
-						<dl>
-							<dt>{$methods[methods].descmethod[dm].link}</dt>
-							<dd>{$methods[methods].descmethod[dm].sdesc}</dd>
-						</dl>
-						{/section}</p>
-						{/if}
+					{include file="docblock.tpl" sdesc=$methods[methods].sdesc desc=$methods[methods].desc tags=$methods[methods].tags}
+					<!-- {if $methods[methods].descmethod}
+										<p>Overridden in child classes as:<br />
+											{section name=dm loop=$methods[methods].descmethod}
+											<dl>
+												<dt>{$methods[methods].descmethod[dm].link}</dt>
+												<dd>{$methods[methods].descmethod[dm].sdesc}</dd>
+											</dl>
+											{/section}</p>
+											{/if}  -->
 						{if $methods[methods].method_implements}
 						<hr class="separator" />
 						<div class="notes">Implementation of:</div>
@@ -113,20 +111,17 @@
 		    <h3>
 			<span class="title_method">{if $methods[methods].ifunction_call.constructor}constructor {elseif $methods[methods].ifunction_call.destructor}destructor {else}method {/if}{$methods[methods].function_name} </span><span class="smalllinenumber">[line {if $methods[methods].slink}{$methods[methods].slink}{else}{$methods[methods].line_number}{/if}]</span>
 		  	</h3>
-		<div class="function">
-		  		 {if $sdesc != ''}{$sdesc|default:''}<br />{/if}
-				{if $desc != ''}{$desc|default:''}<br />{/if}
-				
-		  		<!-- {include file="docblock.tpl" sdesc=$methods[methods].sdesc desc=$methods[methods].desc tags=$methods[methods].tags} -->
-		  		{if $methods[methods].descmethod}
-		<p>Overridden in child classes as:<br />
-		{section name=dm loop=$methods[methods].descmethod}
-		<dl>
-		<dt>{$methods[methods].descmethod[dm].link}</dt>
-		<dd>{$methods[methods].descmethod[dm].sdesc}</dd>
-		</dl>
-		{/section}</p>
-		{/if} 
+		<div class="function">  
+			{include file="docblock.tpl" sdesc=$methods[methods].sdesc desc=$methods[methods].desc tags=$methods[methods].tags} 
+		  		<!-- {if $methods[methods].descmethod}
+		  				<p>Overridden in child classes as:<br />
+		  				{section name=dm loop=$methods[methods].descmethod}
+		  				<dl>
+		  				<dt>{$methods[methods].descmethod[dm].link}</dt>
+		  				<dd>{$methods[methods].descmethod[dm].sdesc}</dd>
+		  				</dl>
+		  				{/section}</p>
+		  				{/if} --> 
 		<div class="titl_ct">
 		
 			<h3>Sintax:</h3>

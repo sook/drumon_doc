@@ -129,95 +129,95 @@
 </div>
 <div class="content_class">
 
-	{* original {if $children != ""
-	<valign="top">
-		<h3>Child classes:</h3>
-	<div class="tags">
-		{$children *}
-    	
-		{if $children}
-    	
-		<h3>Child classes:</h3>
+	<!-- {* original {if $children != ""
+		<valign="top">
+			<h3>Child classes:</h3>
 		<div class="tags">
-		{section name=kids loop=$children}
+			{$children *}
+	    	
+			{if $children}
+	    	
+			<h3>Child classes:</h3>
+			<div class="tags">
+			{section name=kids loop=$children}
+			<dl>
+			<dt>{$children[kids].link}</dt>
+				<dd>{$children[kids].sdesc}</dd>
+			</dl>
+			{/section}
+		</div>
+
+		{/if} -->
+
+	<!-- {if $iconsts && count($iconsts) > 0}
+
+		<h3>Inherited Constants </h3>
+		{section name=iconsts loop=$iconsts}
+		
+		<div class="tags">
+		<h4>Class: {$iconsts[iconsts].parent_class}</h4>
 		<dl>
-		<dt>{$children[kids].link}</dt>
-			<dd>{$children[kids].sdesc}</dd>
+		{section name=iconsts2 loop=$iconsts[iconsts].iconsts}
+		<dt>
+		  {$iconsts[iconsts].iconsts[iconsts2].link}
+		</dt>
+		<dd>
+		  {$iconsts[iconsts].iconsts[iconsts2].iconsts_sdesc} 
+		</dd>
+		{/section}
+		</dl>
+		</div>
+		{/section}
+
+		{/if}
+
+		{if $ivars && count($ivars) > 0}
+	    <div class="inheritd">
+	    	
+	    
+		<h3>Inherited Variables</h3>
+		{section name=ivars loop=$ivars}
+		<div class="tags">
+		<h4>Class: {$ivars[ivars].parent_class}</h4>
+		<dl>
+		{section name=ivars2 loop=$ivars[ivars].ivars}
+		<dt>
+		  {$ivars[ivars].ivars[ivars2].link}
+		  {* original <a href="{$ivars[ivars].ivars[ivars2].ipath #{$ivars[ivars].ivars[ivars2].ivar_name ">{$ivars[ivars].ivars[ivars2].ivar_name </a> *}
+		</dt>
+		<dd>
+		  {$ivars[ivars].ivars[ivars2].ivars_sdesc} 
+		</dd>
+		{/section}
+		</dl>
+		</div>
+		{/section} 
+		</div>
+		{/if}
+
+		{if $imethods && count($imethods) > 0}  
+		<div class="inheritd">
+		
+		<h3>Inherited Methods</h3>
+		<div class="tags">
+		{section name=imethods loop=$imethods}
+		<h4>Class: {$imethods[imethods].parent_class}</h4>
+		<dl>
+		  {section name=im2 loop=$imethods[imethods].imethods}
+		  <dt>
+		    {$imethods[imethods].imethods[im2].link}
+		{* original    <a href="{$imethods[imethods].imethods[im2].ipath#{$imethods[imethods].imethods[im2].ifunction_name">{$imethods[imethods].imethods[im2].ifunction_call</a> *}
+		  </dt>
+		  <dd>
+		    {$imethods[imethods].imethods[im2].sdesc}
+		  </dd>
+		  {/section}
 		</dl>
 		{/section}
-	</div>
-
-	{/if}
-
-	{if $iconsts && count($iconsts) > 0}
-
-	<h3>Inherited Constants </h3>
-	{section name=iconsts loop=$iconsts}
-	
-	<div class="tags">
-	<h4>Class: {$iconsts[iconsts].parent_class}</h4>
-	<dl>
-	{section name=iconsts2 loop=$iconsts[iconsts].iconsts}
-	<dt>
-	  {$iconsts[iconsts].iconsts[iconsts2].link}
-	</dt>
-	<dd>
-	  {$iconsts[iconsts].iconsts[iconsts2].iconsts_sdesc} 
-	</dd>
-	{/section}
-	</dl>
-	</div>
-	{/section}
-
-	{/if}
-
-	{if $ivars && count($ivars) > 0}
-    <div class="inheritd">
-    	
-    
-	<h3>Inherited Variables</h3>
-	{section name=ivars loop=$ivars}
-	<div class="tags">
-	<h4>Class: {$ivars[ivars].parent_class}</h4>
-	<dl>
-	{section name=ivars2 loop=$ivars[ivars].ivars}
-	<dt>
-	  {$ivars[ivars].ivars[ivars2].link}
-	  {* original <a href="{$ivars[ivars].ivars[ivars2].ipath #{$ivars[ivars].ivars[ivars2].ivar_name ">{$ivars[ivars].ivars[ivars2].ivar_name </a> *}
-	</dt>
-	<dd>
-	  {$ivars[ivars].ivars[ivars2].ivars_sdesc} 
-	</dd>
-	{/section}
-	</dl>
-	</div>
-	{/section} 
-	</div>
-	{/if}
-
-	{if $imethods && count($imethods) > 0}  
-	<div class="inheritd">
-	
-	<h3>Inherited Methods</h3>
-	<div class="tags">
-	{section name=imethods loop=$imethods}
-	<h4>Class: {$imethods[imethods].parent_class}</h4>
-	<dl>
-	  {section name=im2 loop=$imethods[imethods].imethods}
-	  <dt>
-	    {$imethods[imethods].imethods[im2].link}
-	{* original    <a href="{$imethods[imethods].imethods[im2].ipath#{$imethods[imethods].imethods[im2].ifunction_name">{$imethods[imethods].imethods[im2].ifunction_call</a> *}
-	  </dt>
-	  <dd>
-	    {$imethods[imethods].imethods[im2].sdesc}
-	  </dd>
-	  {/section}
-	</dl>
-	{/section}
-	</div>
-		
-	</div>
-	{/if}
+		</div>
+			
+		</div>
+		{/if} -->
 
 </div>
 <div class="content_class">
