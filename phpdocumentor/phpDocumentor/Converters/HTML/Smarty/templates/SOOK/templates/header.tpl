@@ -8,7 +8,7 @@
 <div id="conteiners">    
 	<div id="topo">
 		<div id="toptopo">
-		   <a class="topostyle">Drumon: Documentação Framework</a>
+		   <a href="/docs/api" class="topostyle">Drumon Framework - API</a>
 		</div> 
 		         
 		<div id="subtopo">

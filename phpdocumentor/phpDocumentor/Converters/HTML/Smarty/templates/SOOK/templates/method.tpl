@@ -64,7 +64,7 @@
 							  <tr>
 								<td><b>{$methods[methods].params[params].var}</b>&nbsp;&nbsp;</td>    
 								<td class="type">{$methods[methods].params[params].datatype}&nbsp;&nbsp; </td>
-							    <td>- &nbsp;{$methods[methods].params[params].data}</td>
+							    <td> &nbsp;{$methods[methods].params[params].data}</td>
 							  </tr>
 							{/section}
 							</table>      
@@ -168,7 +168,7 @@
 							<td><b>{$methods[methods].params[params].var}</b>&nbsp;&nbsp;</td> 
         					<td class="type">({$methods[methods].params[params].datatype})&nbsp;&nbsp; </td>
         					
-        					<td>- &nbsp;{$methods[methods].params[params].data}</td>
+        					<td> &nbsp;{$methods[methods].params[params].data}</td>
       					</tr>
     					{/section}
     				</table>
