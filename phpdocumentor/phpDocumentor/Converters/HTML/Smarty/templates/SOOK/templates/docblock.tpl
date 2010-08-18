@@ -1,2 +1,2 @@
-{if $sdesc != ''}{$sdesc|default:''}<br />{/if}
-{if $desc != ''}{$desc|default:''}<br />{/if}
+{if $sdesc != ''}{$sdesc|default:''}{/if}
+{if $desc != ''}{$desc|default:''}{/if}

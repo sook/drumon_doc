@@ -183,6 +183,10 @@ div.function
   padding-top:       15px;
 }
 
+div.function p {
+	margin:20px 0px 20px 0px;
+}
+
 div.top
 {
   font-size:          8pt;  
@@ -329,8 +333,8 @@ div#conteiner {
 			margin-bottom:20px;
 		} 
 		.param_content {
-			margin-top:10px;
-			margin-bottom:10px;
+			margin-top:30px;
+			margin-bottom:30px;
 		}  
 		.titl_ct {
 			margin-top:20px;
