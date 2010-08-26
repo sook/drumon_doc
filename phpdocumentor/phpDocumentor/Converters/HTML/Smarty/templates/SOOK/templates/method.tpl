@@ -72,21 +72,20 @@
     						</div>
     					    {/if}
 							
-							<div class="content_tags_sep">
-								{section name=tag loop=$methods[methods].tags}     
+							
+								{section name=tag loop=$methods[methods].tags}
+								   <div class="content_tags_sep">
 									{if ( $methods[methods].tags[tag].keyword == 'return')}
-										{$methods[methods].function_return}          
+										<h3>{$methods[methods].tags[tag].keyword|capitalize}:</h3>
+										
+										<div class="data_tg">{$methods[methods].function_return} {$methods[methods].tags[tag].data} </div>        
 									{else}
 										<h3>{$methods[methods].tags[tag].keyword|capitalize}:</h3>
 										
-										<div class="data_tg">{$methods[methods].tags[tag].data}</div> 
-									{/if}               
+										<div class="data_tg">{$methods[methods].tags[tag].data} </div> 
+									{/if}
+									</div>               
 								{/section}
-							</div>
-							<div class="content_tags_sep">
-								<h3>Return:</h3> 
-								<div class="data_tg">{$methods[methods].function_return}</div>
-							</div>
 							<hr/>	
 							<div class="top">[ <a href="#top">Top</a> ]</div>
 							
@@ -182,7 +181,7 @@
 						    
 						 	<h3>{$methods[methods].tags[tag].keyword|capitalize}:</h3> 
 							
-							<div class="data_tg">{$methods[methods].function_return}  - {$methods[methods].tags[tag].data}</div> 
+							<div class="data_tg">{$methods[methods].function_return}  {$methods[methods].tags[tag].data}</div> 
 						    	
 						    </div>    
 						{else} 
@@ -194,10 +193,8 @@
 						{/if}               
 					{/section}
 				</div>  
-				
 				<hr/>
     			<div class="top">[ <a href="#top">Top</a> ]</div>
-				
   			</div>
 			</div>
 			{/if}
