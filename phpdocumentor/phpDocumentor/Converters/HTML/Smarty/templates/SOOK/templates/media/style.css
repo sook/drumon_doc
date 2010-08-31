@@ -358,7 +358,35 @@ div#conteiner {
 			margin-left:30px;
 			font-weight:bold;
 		}
-
+		.content_home_txt ol li {
+			padding-top:10px;
+		}
+		.content_home_txt ol li p{
+			padding-top:10px;
+			text-align:justify;
+			line-height:1.4em;
+		}
+		.content_home_txt ol li span {
+			font-weight:bold;
+		}
+		.home_folder {
+			background:#FAEDC5;
+			padding: 1px 2px 1px 2px;
+			border:#D7D193 1px solid;
+		}
+		span.home_prompt{
+			background:#444145;
+			color:#FFF;
+			font-weight:normal;
+			padding: 4px 4px 4px 4px;
+			border:#B3B8B3 2px solid;
+		}
+		.grif_constants {
+			font-weight:bold;
+		}
+		.home_ol_inter {
+			padding-left:40px;
+		}
 		
 		
 		

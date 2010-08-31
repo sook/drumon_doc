@@ -3,6 +3,66 @@
 
 {if $package == ''}
 	<h1>Quick Start API</h1>
+	<div class="content_home_txt">
+	<ol>
+		<li>
+			<span>O que é Drumon Framework? Para que serve?</span>
+			<p>	O Drumon Framework é um conjunto de código baseando na arquitetura MVC, a princípio este framework parece 
+				ser inútil, porém ele foi desenvolvido com o objetivo de tornar simples a implementação de aplicações que 
+				utilizam o sistema Drumon(colocar o link para o site). Para todos os módulos que estiverem disponíveis no 
+				Drumon CMS, existirá no framework um modelo relacionado, com todas as funcionalidades pré-definidas, 
+				verifique na pasta <span class="home_folder">core/</span>. Por questão de simplicidade não está sendo utilizado nenhum outro framework, 
+				porém, caso queira, está flexível para adaptação. Para isso é necessário ter um conhecimento mais profundo 
+				da linguagem PHP.
+			</p>
+			<p>
+				Este projeto está sob licença GPL. Colabore com o desenvolvimento deste  <a href="http://github.com/sook/drumon_framework">projeto</a>.
+			</p>
+		</li>
+		<li>
+			<span>Baixe o framework do github:</span>
+			<p>Para baixar o framework é simple, isso pode ser feito de duas formas:</p>
+			<ol class="home_ol_inter">
+				<li>
+					<span>Baixando o projeto livre de versionamento:</span>
+					<p>Acesse o site do projeto no endereço: <a href="http://github.com/sook/drumon_framework">http://github.com/sook/drumon_framework</a> e clique no botão 
+						<img src="media/btdwnsource.png" alt=""> (localizado na parte superior direita da página). Descompacte
+						 em uma pasta no diretório raiz do seu servidor que possui o php5 instalado.
+					</p>
+				</li>
+				<li>
+					<span>Baixando utilizando o comando git:</span>
+					<p>Para isso é necessário que tenha instalado o controlador de versão do git(dá destaque na palavra git),
+						 para instalar veja esse guia. Após instalado, abra o terminal, acesse o diretório raiz do seu servidor 
+						que possui o php5 instalado e digite o comando: 
+					</p>
+					<p><span class="home_prompt">git clone git@github.com:sook/drumon_framework.git</span></p>
+				</li>
+				
+			</ol>
+		</li>
+		<li>
+			<span>Configurando ambiente:</span>
+			<p>
+				Na pasta <span class="home_folder">app/config/</span> estão os principais arquivos a serem configurados. No arquivo <span class="home_folder">app/config/application.php</span>
+				é possível definir as seguintes constantes: 
+			</p>
+			<ol class="home_ol_inter">
+				<li><span class="grif_constants">ENV</span> - Ambiente de trabalho da aplicação: 'development' (default) ou 'production';</li>
+				<li><span class="grif_constants">LANGUAGE</span> - Define o locate da aplicação: 'pt-br' (default) ou 'en-us';</li>
+				<li><span class="grif_constants">DEFAULT_HELPERS</span> - Helpers que serão incluidos para toda a aplicação: 'Html,Date,Text' (default). 
+					Para verificar os Helpers existentes, basta ir na pasta <span class="home_folder">core/helpers</span>.
+				</li>
+				<li><span class="grif_constants">ERROR</span> - Define a página default para erro 404. Este arquivo está localizado na pasta <span class="home_folder">app/public.</span></li>
+			</ol>
+			<p>
+				Para alterar as configurações do banco de dados vá na pasta app/config/enviroments e escolha o arquivo relacionado ao ambiente que está trabalhando.
+				Pronto, agora basta acessar o endereço da página no seu browser. Para mais informações de como construir sua aplicação utilizando este framework, 
+				acesse o guia de implementação do Drumon Framework, clique aqui!
+			</p>
+		</li>
+	</ol>
+	</div>
 {/if}
 
 {if $package != ''}
