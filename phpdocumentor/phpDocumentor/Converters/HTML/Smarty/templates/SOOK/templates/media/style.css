@@ -358,8 +358,11 @@ div#conteiner {
 			margin-left:30px;
 			font-weight:bold;
 		}
+		.content_home_txt {
+			margin-bottom:20px;
+		}
 		.content_home_txt ol li {
-			padding-top:10px;
+			padding-top:30px;
 		}
 		.content_home_txt ol li p{
 			padding-top:10px;
@@ -375,11 +378,12 @@ div#conteiner {
 			border:#D7D193 1px solid;
 		}
 		span.home_prompt{
-			background:#444145;
-			color:#FFF;
+			background:#EDEDED;
+			color:#000;
 			font-weight:normal;
 			padding: 4px 4px 4px 4px;
-			border:#B3B8B3 2px solid;
+			border:#B3B8B3 1px solid;
+			font-size:12px;
 		}
 		.grif_constants {
 			font-weight:bold;
@@ -387,7 +391,9 @@ div#conteiner {
 		.home_ol_inter {
 			padding-left:40px;
 		}
-		
+		.destqhome {
+			font-weight:bold;
+		}
 		
 		
 		
