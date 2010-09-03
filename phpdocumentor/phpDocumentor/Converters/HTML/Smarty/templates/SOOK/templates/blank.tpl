@@ -13,7 +13,7 @@
 			</p>
 			<p>Para todos os módulos que estiverem disponíveis no Drumon CMS, existirá no framework um modelo relacionado, com todas as funcionalidades pré-definidas, 
 				verifique na pasta <span class="home_folder">core/</span>. Por questão de simplicidade não está sendo utilizado nenhum outro framework, 
-				porém, caso queira, está flexível para adaptação. Para isso é necessário ter um conhecimento mais profundo 
+				porém, caso queira, está flexível para adaptação. Para isso, é necessário ter um conhecimento mais profundo 
 				da linguagem PHP.
 			</p>
 			<p>
@@ -34,7 +34,7 @@
 				<li>
 					<span>Baixando utilizando o comando git:</span>
 					<p>Para isso é necessário que tenha instalado o controlador de versão do  <span class="destqhome">git</span>,
-						 para instalar veja esse guia. Após instalado, abra o terminal, acesse o diretório raiz do seu servidor 
+						 para instalar veja esse <a href="http://book.git-scm.com/2_installing_git.html">guia</a>. Após instalado, abra o terminal, acesse o diretório raiz do seu servidor 
 						que possui o php5 instalado e digite o comando: 
 					</p>
 					<p><span class="home_prompt">git clone git@github.com:sook/drumon_framework.git</span></p>
@@ -58,7 +58,7 @@
 			</ol>
 			<p>
 				Para alterar as configurações do banco de dados vá na pasta <span class="home_folder">app/config/enviroments</span> e escolha o arquivo relacionado ao ambiente que está trabalhando.
-				Pronto, agora basta acessar o endereço da página no seu browser. Para mais informações de como construir sua aplicação utilizando este framework, 
+				Pronto, agora basta acessar o endereço da página no seu browser <span class="home_folder">http://www.localhost/drumon_framework/app</span>. Para mais informações de como construir sua aplicação utilizando este framework, 
 				acesse o guia de implementação do Drumon Framework, <a href="http://http://www.drumoncms.com/">clique aqui!</a>
 			</p>
 		</li>
